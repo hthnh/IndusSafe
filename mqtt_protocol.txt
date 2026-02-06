@@ -1,0 +1,29 @@
+ESP -> Server (data)
+
+indussafe/data/motor_01
+
+payload = {
+  "U": [220, 219, 221],
+  "I": [4.2, 4.1, 4.3],
+  "ts": "2026-02-05T14:20:00"
+}
+
+
+
+Server -> ESP (command)
+
+indussafe/cmd/motor_01
+
+payload = { "command": "CUT_POWER" }
+
+
+
+ESP → Server (status)
+
+indussafe/status/motor_01
+
+payload = { "state": "RUNNING" }
+
+
+
+

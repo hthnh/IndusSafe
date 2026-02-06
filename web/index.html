@@ -1,3 +1,41 @@
-<h2>Motor 3 Phase Monitor</h2>
-<div id="status"></div>
-<script src="app.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IndusSafe Dashboard</title>
+  <style>
+    body { font-family: Arial; background: #111; color: #eee; padding: 20px; }
+    .card { background: #222; padding: 15px; margin: 10px 0; border-radius: 8px; }
+    .ok { color: #0f0; }
+    .warn { color: #ff0; }
+    .crit { color: #f00; }
+    button { padding: 10px; font-size: 16px; }
+  </style>
+</head>
+
+<body>
+  <h1>⚙️ IndusSafe – Motor 3 Pha</h1>
+
+  <div class="card">
+    <h3>Điện áp (V)</h3>
+    <div id="voltage"></div>
+  </div>
+
+  <div class="card">
+    <h3>Dòng điện (A)</h3>
+    <div id="current"></div>
+  </div>
+
+  <div class="card">
+    <h3>Trạng thái</h3>
+    <div id="status"></div>
+  </div>
+
+  <div class="card">
+    <button onclick="cutPower()">🛑 NGẮT TẢI</button>
+  </div>
+
+<script src="/static/app.js"></script>
+
+</body>
+</html>
