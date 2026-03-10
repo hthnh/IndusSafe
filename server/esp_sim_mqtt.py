@@ -3,7 +3,7 @@ from datetime import datetime
 import paho.mqtt.client as mqtt
 
 DEVICE_ID = "motor_01"
-client = mqtt.Client()
+client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
 client.connect("localhost", 1883, 60)
 
 def on_message(c, u, msg):
@@ -18,7 +18,8 @@ while True:
         "U": [
             random.uniform(210, 230),
             random.uniform(210, 230),
-            random.choice([0, random.uniform(210, 230)])
+            random.uniform(210, 230)
+            # random.choice([0, random.uniform(210, 230)])
         ],
         "I": [
             random.uniform(3, 6),

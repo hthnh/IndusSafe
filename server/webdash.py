@@ -90,7 +90,7 @@ def index():
 
 <body>
 
-<h1>⚙️ IndusSafe – Motor 3 Pha (LAN Mode)</h1>
+<h1>⚙️ IndusSafe – Motor 3 Pha </h1>
 
 <div class="card">
   <h3>Điện áp (V)</h3>
